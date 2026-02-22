@@ -1,0 +1,16 @@
+[project]
+name = "backtestkit"
+version = "0.1.0"
+description = "Historical Backtesting Engine + Signal Generator"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas",
+    "numpy",
+    "matplotlib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
